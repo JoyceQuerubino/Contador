@@ -20,13 +20,18 @@ export const Card = styled.div`
   padding: 18px;
   text-align: center;
   width: min(90vw, 800px);
+
+  .challenge{
+    font-size: 26px;
+    margin-bottom: 60px;
+  }
 `
 
 export const Title = styled.h1`
   font-family: Verdana, sans-serif;
   font-size: 60px;
   font-weight: bold;
-  margin-bottom: 80px;
+  margin-bottom: 15px;
   text-transform: uppercase;
   color: #7F25D9;
 `
@@ -36,6 +41,10 @@ export const Counter = styled.div`
   align-items: center; 
   justify-content: space-around;
   width: 100%; 
+
+  .square{
+    width: 60px;
+  }
 `
 export const Button = styled.button`
   font-family: Verdana, sans-serif;
@@ -63,7 +72,7 @@ export const Count = styled.div`
 export const Modal = styled.div `
   align-items: center;
   background: #eee;
-  border: 1px solid #ccc;
+
   display: flex;
   flex-direction: column;
   height: 500px;
@@ -71,16 +80,17 @@ export const Modal = styled.div `
   padding: 40px;
   position: absolute;
   width: 600px;
+  box-shadow: 9px 9px 5px 0px rgba(20, 20, 20, 0.30);
 
   button{
     border: none;
+    color: #999999;
     cursor: pointer;
     font-size: 24px; 
-    padding: 16px;
+    padding: 14px;
     position: absolute;
     right: 0;
     top:0;
-
   }
 
   img{

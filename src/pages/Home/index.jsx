@@ -5,6 +5,7 @@ import { Container, Card, Title, Counter, Button, Count, Modal } from "./style";
 export default function Home() {
   const [count, setCount] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
+  const [challengeMessage, setChallengeMessage] = useState();
 
   const [warning, setWarning] = useState({
     message: "", //Posso colocar null, 0, 'vazio';
@@ -39,6 +40,7 @@ export default function Home() {
         "Falei pra parar!",
         "https://media.giphy.com/media/1zkVuO55wfgDC/giphy.gif"
       );
+      setChallengeMessage("Quero ver apertar agora!");
     }
   };
 
@@ -51,12 +53,16 @@ export default function Home() {
       <Container>
         <Card>
           <Title>Contador</Title>
+          <p className="challenge">{challengeMessage}</p>
           <Counter>
             <Button onClick={() => handleRemove()}>-</Button>
             <Count>{count}</Count>
-            <Button onClick={() => handleAdd()} disabled={count === 10}>
-              +
-            </Button>
+
+            <div className="square">
+              <Button onClick={() => handleAdd()} disabled={count === 10}>
+                +
+              </Button>
+            </div>
           </Counter>
           {modalOpen && (
             <Modal>
