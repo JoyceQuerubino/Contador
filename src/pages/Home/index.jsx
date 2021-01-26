@@ -55,11 +55,21 @@ export default function Home() {
           <Title>Contador</Title>
           <p className="challenge">{challengeMessage}</p>
           <Counter>
-            <Button onClick={() => handleRemove()}>-</Button>
+            <Button
+              onClick={() => handleRemove()}
+              disabled={count === 10}
+              none={count === 10}
+            >
+              -
+            </Button>
             <Count>{count}</Count>
 
             <div className="square">
-              <Button onClick={() => handleAdd()} disabled={count === 10}>
+              <Button
+                onClick={() => handleAdd()}
+                disabled={count === 10}
+                off={count === 10}
+              >
                 +
               </Button>
             </div>

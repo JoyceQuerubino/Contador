@@ -63,19 +63,20 @@ export const Counter = styled.div`
   }
 `
 export const Button = styled.button`
+  background: transparent;
+  color: #2F0459; 
+  cursor: pointer;
   font-family: Verdana, sans-serif;
   font-size: 40px;
   font-weight: bold;
   height: 60px; 
   width: 60px;
-  background: transparent;
- 
-
-  cursor: pointer;
-  color: #2F0459; 
 
 // Quando a prop conter a palavra 'disabled', será 'none', senão será 'block'
-  display:${(props) => ( props.disabled ? "none" : "block" )};
+  
+  display:${(props) => ( props.off ? "none" : "block" )};
+  opacity:${(props) => (props.none ? "0.5" : "1")};
+  cursor:${(props) => (props.none ? "not-allowed" : "pointer")};
 `
 
 
