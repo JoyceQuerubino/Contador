@@ -21,10 +21,26 @@ export const Card = styled.div`
   text-align: center;
   width: min(90vw, 800px);
 
+  animation: motionY 0.5s linear;
+
   .challenge{
     font-size: 26px;
     margin-bottom: 60px;
   }
+
+
+  @keyframes motionY {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 `
 
 export const Title = styled.h1`
@@ -82,6 +98,18 @@ export const Modal = styled.div `
   width: 600px;
   box-shadow: 9px 9px 5px 0px rgba(20, 20, 20, 0.30);
 
+  animation: motion-opacity 0.3s ease;
+
+  @keyframes motion-opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
   button{
     border: none;
     color: #999999;
@@ -94,7 +122,7 @@ export const Modal = styled.div `
   }
 
   img{
-
+    width: 100%;
   }
 
   p{
@@ -103,3 +131,5 @@ export const Modal = styled.div `
     margin-bottom: 20px;
   }
 `
+
+
