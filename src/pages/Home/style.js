@@ -49,7 +49,7 @@ export const Title = styled.h1`
   font-weight: bold;
   margin-bottom: 15px;
   text-transform: uppercase;
-  color: #7F25D9;
+  color: #1e74bf;
 `
 
 export const Counter = styled.div`
@@ -64,7 +64,7 @@ export const Counter = styled.div`
 `
 export const Button = styled.button`
   background: transparent;
-  color: #2F0459; 
+  color: #082f51; 
   cursor: pointer;
   font-family: Verdana, sans-serif;
   font-size: 40px;
@@ -124,6 +124,7 @@ export const Modal = styled.div `
 
   img{
     width: 100%;
+    max-height: 350px;
   }
 
   p{
