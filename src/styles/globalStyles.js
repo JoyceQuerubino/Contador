@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle `
     *, 
     *:before, 
     *:after {
-        box-sizing:border-box;
+        box-sizing:border-box; //Sempre coloque o border-box, para que as definições de margin, padding, sejam corretas e não adcionadas aumentando o tamanho.
         margin: 0; 
         padding: 0; 
     }

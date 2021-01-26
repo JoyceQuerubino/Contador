@@ -49,6 +49,7 @@ export const Button = styled.button`
   cursor: pointer;
   color: #2F0459; 
 
+// Quando a prop conter a palavra 'disabled', será 'none', senão será 'block'
   display:${(props) => ( props.disabled ? "none" : "block" )};
 `
 
