@@ -49,7 +49,10 @@ export const Button = styled.button`
   cursor: pointer;
   color: #2F0459; 
 
+  display:${(props) => ( props.disabled ? "none" : "block" )};
 `
+
+
 export const Count = styled.div`
   font-family: Verdana, sans-serif;
   font-size: 56px;
