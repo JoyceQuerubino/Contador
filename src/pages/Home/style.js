@@ -17,7 +17,7 @@ export const Card = styled.div`
   flex-direction: column; 
   height: 600px;
   justify-content: center; 
-  padding: 18px;
+  padding: 15px;
   text-align: center;
   width: min(90vw, 800px);
 
@@ -26,6 +26,11 @@ export const Card = styled.div`
   .challenge{
     font-size: 26px;
     margin-bottom: 60px;
+  }
+
+  .logo{
+    margin-bottom: 60px;
+    margin-top: -60px;
   }
 
 
@@ -71,6 +76,7 @@ export const Button = styled.button`
   font-weight: bold;
   height: 60px; 
   width: 60px;
+
 
 // Quando a prop conter a palavra 'disabled', será 'none', senão será 'block'
   
@@ -133,5 +139,3 @@ export const Modal = styled.div `
     margin-bottom: 20px;
   }
 `
-
-

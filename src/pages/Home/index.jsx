@@ -1,5 +1,7 @@
 import React, { Fragment, useState } from "react";
 
+import CartIcon from "../../images/img1.png";
+
 import { Container, Card, Title, Counter, Button, Count, Modal } from "./style";
 
 export default function Home() {
@@ -82,8 +84,8 @@ export default function Home() {
     <Fragment>
       <Container>
         <Card>
+          <img src={CartIcon} type="img" alt="logo" className="logo" />
           <Title>Contador</Title>
-
           <p className="challenge">{challengeMessage}</p>
           <Counter>
             <Button
@@ -111,7 +113,7 @@ export default function Home() {
                 X
               </button>
               <p>{warning.message}</p>
-              <img src={warning.url} type="img" />
+              <img src={warning.url} type="img" alt="Gif representativo" />
             </Modal>
           )}
         </Card>
