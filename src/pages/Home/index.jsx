@@ -1,18 +1,37 @@
 import React, { Fragment, useState } from "react";
 
-import CartIcon from "../../images/img1.png";
+import imgNormal from "../../images/img1.png";
+import imgangry from "../../images/img2.png";
+import imgEnd from "../../images/img3.png";
+import imgHappy from "../../images/img4.png";
 
 import { Container, Card, Title, Counter, Button, Count, Modal } from "./style";
 
 export default function Home() {
   const [count, setCount] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
-  const [challengeMessage, setChallengeMessage] = useState();
+  const [challengeMessage, setChallengeMessage] = useState(
+    "Esse é o contador do pato Donald!"
+  );
+  const [logo, setLogo] = useState(imgNormal);
 
   const [warning, setWarning] = useState({
     message: "", //Posso colocar null, 0, 'vazio';
     url: "",
   });
+
+  //função logo
+  const handleLogo = () => {
+    if (count === 0) {
+      setLogo(imgNormal);
+    } else if (count < 0) {
+      setLogo(imgangry);
+    } else if (count > 0 && count < 6) {
+      setLogo(imgHappy);
+    } else if (count === 6) {
+      setLogo(imgEnd);
+    }
+  };
 
   //tornando a função dinamica
   const handleWarning = (message, url) => {
@@ -24,6 +43,7 @@ export default function Home() {
 
   const handleRemove = () => {
     setCount(count - 1);
+    handleLogo();
 
     //Negativos
     if (count === -2) {
@@ -50,6 +70,7 @@ export default function Home() {
 
   const handleAdd = () => {
     setCount(count + 1);
+    handleLogo();
 
     if (count === 2) {
       setModalOpen(true);
@@ -84,7 +105,7 @@ export default function Home() {
     <Fragment>
       <Container>
         <Card>
-          <img src={CartIcon} type="img" alt="logo" className="logo" />
+          <img src={logo} type="img" alt="logo" className="logo" />
           <Title>Contador</Title>
           <p className="challenge">{challengeMessage}</p>
           <Counter>

@@ -24,6 +24,9 @@ export const Card = styled.div`
   animation: motionY 0.5s linear;
 
   .challenge{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-style:italic;
     font-size: 26px;
     margin-bottom: 60px;
   }
@@ -49,9 +52,9 @@ export const Card = styled.div`
 `
 
 export const Title = styled.h1`
-  font-family: Verdana, sans-serif;
+  font-family: 'Paytone One', sans-serif;;
   font-size: 60px;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 15px;
   text-transform: uppercase;
   color: #1e74bf;
