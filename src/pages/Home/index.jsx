@@ -83,7 +83,7 @@ export default function Home() {
       setModalOpen(true);
       //Add os valores ao objeto
       handleWarning(
-        "Já chega, ele é muito ganancioso.",
+        "Já chega, ele é muito ganancioso!",
         "https://media.giphy.com/media/146VLy0Dn1maDC/giphy.gif"
       );
       setChallengeMessage("Melhor parar eim...");
@@ -107,7 +107,7 @@ export default function Home() {
         <Card>
           <img src={logo} type="img" alt="logo" className="logo" />
           <Title>Contador</Title>
-          <p className="challenge">{challengeMessage}</p>
+          <p className="challenge"> {challengeMessage}</p>
           <Counter>
             <Button
               onClick={() => handleRemove()}

@@ -29,6 +29,7 @@ export const Card = styled.div`
     font-style:italic;
     font-size: 26px;
     margin-bottom: 60px;
+
   }
 
   .logo{
@@ -137,8 +138,10 @@ export const Modal = styled.div `
   }
 
   p{
-    font-family: Verdana, sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-style: italic;
     font-size: 25px;
     margin-bottom: 20px;
+    
   }
 `
