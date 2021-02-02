@@ -6,6 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   height: 100vh;
   justify-content: center;
+  padding: 20px;
  
 `
 export const Card = styled.div`
@@ -29,7 +30,6 @@ export const Card = styled.div`
     font-style:italic;
     font-size: 26px;
     margin-bottom: 60px;
-
   }
 
   .logo{
@@ -144,4 +144,27 @@ export const Modal = styled.div `
     margin-bottom: 20px;
     
   }
+
+  //Responsividade
+
+  @media(max-width: 630px) {
+    width: 400px;
+    height: 400px;
+
+    img{
+      max-height: 250px;
+    }
+  }
+
+  @media(max-width: 460px) {
+    width: 400px;
+    height: 400px;
+
+    img{
+      max-height: 250px;
+    }
+  }
+
+
+
 `

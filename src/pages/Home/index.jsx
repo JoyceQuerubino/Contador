@@ -1,8 +1,8 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 
 import imgNormal from "../../images/img1.png";
 import imgangry from "../../images/img2.png";
-import imgEnd from "../../images/img3.png";
+import imgFunny from "../../images/img3.png";
 import imgHappy from "../../images/img4.png";
 
 import { Container, Card, Title, Counter, Button, Count, Modal } from "./style";
@@ -21,16 +21,16 @@ export default function Home() {
   });
 
   //função logo
-  const handleLogo = () => {
-    if (count === 0) {
-      setLogo(imgNormal);
-    } else if (count < 0) {
-      setLogo(imgangry);
-    } else if (count > 0 && count < 6) {
-      setLogo(imgHappy);
-    } else if (count === 6) {
-      setLogo(imgEnd);
-    }
+  const handleLogo = (value) => {
+    //criando um obj literal
+    const donaldsFace = {
+      HAPPY: imgHappy,
+      ANGRY: imgangry,
+      NORMAL: imgNormal,
+      FUNNY: imgFunny,
+    };
+
+    return setLogo(donaldsFace[value]);
   };
 
   //tornando a função dinamica
@@ -43,7 +43,6 @@ export default function Home() {
 
   const handleRemove = () => {
     setCount(count - 1);
-    handleLogo();
 
     //Negativos
     if (count === -2) {
@@ -70,7 +69,6 @@ export default function Home() {
 
   const handleAdd = () => {
     setCount(count + 1);
-    handleLogo();
 
     if (count === 2) {
       setModalOpen(true);
@@ -100,6 +98,18 @@ export default function Home() {
   const handleModal = () => {
     setModalOpen(false);
   };
+
+  useEffect(() => {
+    if (count > 0 && count < 6) {
+      handleLogo("HAPPY");
+    } else if (count < 0) {
+      handleLogo("ANGRY");
+    } else if (count === 0) {
+      handleLogo("NORMAL");
+    } else if (count === 6) {
+      handleLogo("FUNNY");
+    }
+  }, [count]);
 
   return (
     <Fragment>
