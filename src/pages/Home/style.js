@@ -104,7 +104,7 @@ export const Modal = styled.div `
   flex-direction: column;
   height: 500px;
   justify-content: center;
-  padding: 40px;
+  padding: 0px 40px;
   position: absolute;
   width: 600px;
   box-shadow: 9px 9px 5px 0px rgba(20, 20, 20, 0.30);
@@ -140,7 +140,7 @@ export const Modal = styled.div `
   p{
     font-family: 'Karla', sans-serif;
     font-style: italic;
-    font-size: 25px;
+    font-size: 24px;
     margin-bottom: 20px;
     
   }
@@ -151,20 +151,27 @@ export const Modal = styled.div `
     width: 400px;
     height: 400px;
 
+    p{
+      font-size: 18px;
+      
+    }
+
+    button{
+      font-size: 18px;
+    }
+
     img{
       max-height: 250px;
     }
   }
 
-  @media(max-width: 460px) {
-    width: 400px;
-    height: 400px;
+  @media(max-width: 430px) {
+    width: 300px;
+    height: 330px;
 
-    img{
-      max-height: 250px;
+    p{
+      font-size: 16px;
+   
     }
   }
-
-
-
 `

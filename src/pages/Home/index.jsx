@@ -140,10 +140,10 @@ export default function Home() {
           </Counter>
           {modalOpen && (
             <Modal>
+              <p>{warning.message}</p>
               <button onClick={() => handleModal()} type="button">
                 X
               </button>
-              <p>{warning.message}</p>
               <img src={warning.url} type="img" alt="Gif representativo" />
             </Modal>
           )}
