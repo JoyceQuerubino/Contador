@@ -59,6 +59,11 @@ export const Title = styled.h1`
   margin-bottom: 15px;
   text-transform: uppercase;
   color: #1e74bf;
+
+  @media(max-width: 430px) {
+    font-size: 40px;
+  }
+  
 `
 
 export const Counter = styled.div`
@@ -145,7 +150,7 @@ export const Modal = styled.div `
     
   }
 
-  //Responsividade
+  //Responsividade Modal
 
   @media(max-width: 630px) {
     width: 400px;
@@ -167,7 +172,7 @@ export const Modal = styled.div `
 
   @media(max-width: 430px) {
     width: 300px;
-    height: 330px;
+    height: 340px;
 
     p{
       font-size: 16px;
