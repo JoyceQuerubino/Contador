@@ -87,6 +87,13 @@ export const Button = styled.button`
   height: 60px; 
   width: 60px;
 
+  border-width: 0px;
+  border-style: none;
+  border-color: none;
+
+  :focus{
+    outline-style: none;
+  }
 
 // Quando a prop conter a palavra 'disabled', será 'none', senão será 'block'
   
