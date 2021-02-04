@@ -77,8 +77,8 @@ export const Counter = styled.div`
   }
 `
 export const Button = styled.button`
-  background: #0071B1;
-  color: white; 
+  background: transparent;
+  color: #082f51; 
   cursor: pointer;
   font-family: Verdana, sans-serif;
   font-size: 40px;
