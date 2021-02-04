@@ -139,7 +139,8 @@ export const Modal = styled.div `
 
   button{
     border: none;
-    color: #999999;
+    color: white;
+    background:#0071B1;
     cursor: pointer;
     font-size: 24px; 
     padding: 14px;
