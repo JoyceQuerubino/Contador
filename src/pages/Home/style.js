@@ -77,8 +77,8 @@ export const Counter = styled.div`
   }
 `
 export const Button = styled.button`
-  background: transparent;
-  color: #082f51; 
+  background: #0071B1;
+  color: white; 
   cursor: pointer;
   font-family: Verdana, sans-serif;
   font-size: 40px;
@@ -139,8 +139,7 @@ export const Modal = styled.div `
 
   button{
     border: none;
-    color: white;
-    background:#0071B1;
+    color: #999999;
     cursor: pointer;
     font-size: 24px; 
     padding: 14px;
