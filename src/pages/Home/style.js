@@ -92,6 +92,13 @@ export const Button = styled.button`
   display:${(props) => ( props.off ? "none" : "block" )};
   opacity:${(props) => (props.none ? "0.5" : "1")};
   cursor:${(props) => (props.none ? "not-allowed" : "pointer")};
+
+  @media(max-width: 430px) {
+    height: 50px; 
+    width: 50px;
+    font-size: 30px;
+    }
+
 `
 
 
@@ -99,6 +106,10 @@ export const Count = styled.div`
   font-family: Verdana, sans-serif;
   font-size: 56px;
   font-weight: bold;
+
+  @media(max-width: 430px) {
+   font-size: 40px;
+  }
 `
 
 export const Modal = styled.div `
