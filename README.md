@@ -1,6 +1,10 @@
 # Contador
 
-O contador do Pato Donald é uma aplicação criada com o objetivo de treinar os conceitos iniciais aprendidos com React, como: componentização, estados, rotas, props, libs e muitos outros.
+O contador do Pato Donald é uma aplicação criada com o objetivo de treinar os conceitos iniciais aprendidos com React como: componentização, estados, rotas, props, libs e muitos outros.
+
+Basicamente o contador funciona adicionando ou removendo valores através dos botões de '+' e '-' e conforme isso acontece uma mensagem animada do Pato Donald aparece.
+
+Para ver e testar a aplicação basta clicar no link: https://donald-counter.netlify.app/
 
 ## Preview
 
@@ -34,3 +38,7 @@ yarn start
 ```
 
 ---
+
+<p align= center>
+Desenvolvido por <strong>Joyce Querubino</strong>   -----   Me adicione no <a href="https://www.linkedin.com/in/joyce-querubino/"target="_blank">Linkedin</a>
+</p>
