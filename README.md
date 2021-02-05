@@ -8,6 +8,10 @@ Para ver e testar a aplicação basta clicar no link: https://donald-counter.net
 
 ## Preview
 
+<p align="center">
+   <img src="./github/video.gif" alt="gif ilustrativo" />
+</p>
+
 ## Mobile
 
 ## Tecnologias
