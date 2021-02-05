@@ -4,7 +4,7 @@ O contador do Pato Donald é uma aplicação criada com o objetivo de treinar os
 
 Basicamente o contador funciona adicionando ou removendo valores através dos botões de '+' e '-' e conforme isso acontece uma mensagem animada do Pato Donald aparece.
 
-Para ver e testar a aplicação basta clicar no link: https://donald-counter.netlify.app/
+Ele é totalmente responsivo, então divirta-se testando no celular ou computador, através do link: https://donald-counter.netlify.app/
 
 ## Preview
 
