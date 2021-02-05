@@ -12,8 +12,6 @@ Para ver e testar a aplicação basta clicar no link: https://donald-counter.net
    <img src="./github/video.gif" alt="gif ilustrativo" />
 </p>
 
-## Mobile
-
 ## Tecnologias
 
 - HTML
